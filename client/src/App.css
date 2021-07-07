@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+.spotify-login-button {
+  background-color: #61dafb;
+}
