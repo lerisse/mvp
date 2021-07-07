@@ -1,16 +1,12 @@
 import './App.css';
 import SpotifyLogin from './SpotifyLogin';
-import Search from './Search';
-import MusicPlayer from './MusicPlayer';
-import SearchResults from './SearchResults';
+import Radio from './Radio';
 
 function App() {
   return (
       <div>
-        <SpotifyLogin />
-        <Search />
-        <MusicPlayer />
-        <SearchResults />
+        {/* <SpotifyLogin /> */}
+        <Radio />
       </div>
     )
 }
