@@ -1,6 +1,5 @@
 import React , {useState,useEffect} from 'react';
 import { RadioBrowserApi } from "radio-browser-api";
-import AudioPlayer from 'material-ui-audio-player';
 
 export default function Radio() {
   const [stations, setStations] = useState([]);
@@ -27,14 +26,15 @@ export default function Radio() {
       <div className="stations">
       {stations.map(station => {
         return (
+
           <div key={station.id} className="station">
             <img src={station.favicon} alt="Radio Station Thumbnail"></img>
             <div className="name">{station.name}</div>
-            <div className="description">{station.description}</div>
             <div>
               <audio src={station.urlResolved} controls />
             </div>
           </div>
+
         )
       })}
       </div>
