@@ -3,9 +3,9 @@ import { RadioBrowserApi } from "radio-browser-api";
 
 export default function Radio() {
   const [stations, setStations] = useState([]);
-  const [genres, setGenres] = useState("all");
+  const [genres, setGenres] = useState("house");
 
-  const getStations = async () => {
+  const getStations = async (genres) => {
     const api = new RadioBrowserApi("MVP Radio App");
     // query stations by languge and tag
     const stations = await api.searchStations({
@@ -33,8 +33,8 @@ const radioGenres = [
 ];
 
   useEffect(() => {
-    getStations();
-  }, []);
+    getStations(genres);
+  }, [genres]);
 
   return (
     <div className="radio">
