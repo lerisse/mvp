@@ -13,6 +13,8 @@ Back End:
 - Axios
 - Mongoose
 - DotEnv
+- spotify-web-api-js
+- nodemon ---dev
 
 Database:
 - MongoDB
@@ -31,4 +33,13 @@ Spotity AUTH URL : GET https://accounts.spotify.com/authorize
 
 - Response
   - Code: Needs to be converted to Access Token & Refresh Token
+  - use spotify-web-api-js
 
+This should be done on server side to access the API
+
+
+- Pivot to simple Radio app
+- - https://www.npmjs.com/package/radio-browser-api
+
+- - Need to add Audio Player
+- - https://www.npmjs.com/package/material-ui-audio-player
