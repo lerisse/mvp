@@ -1,7 +1,5 @@
-import "./p5"
+// import "./p5"
 
-
-export default function sketch (props) {
 let song;
 let img;
 let fft;
@@ -121,5 +119,4 @@ class Particle {
     fill(this.color)
     ellipse(this.pos.x, this.pos.y, this.w)
   }
-}
 }
