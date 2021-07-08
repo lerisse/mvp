@@ -1,4 +1,5 @@
 import React , {useState,useEffect} from 'react';
+import Vizualizer from './Vizualizer';
 import { RadioBrowserApi } from "radio-browser-api";
 
 export default function Radio() {
@@ -38,6 +39,7 @@ const radioGenres = [
 
   return (
     <div className="radio">
+          <Vizualizer />
       <div className="filters">
         {radioGenres.map((genre, index) => (
           <span
