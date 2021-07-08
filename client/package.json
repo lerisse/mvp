@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@gen/react-use-p5": "^0.4.1",
     "@material-ui/core": "^4.12.1",
     "material-ui-audio-player": "^1.6.6",
     "radio-browser-api": "^4.0.0",

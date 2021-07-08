@@ -1,10 +1,13 @@
 import React , {useState,useEffect} from 'react';
-import Vizualizer from './Vizualizer';
+import { useP5 } from '@gen/react-use-p5';
+import { sketch } from './sketch';
 import { RadioBrowserApi } from "radio-browser-api";
 
 export default function Radio() {
   const [stations, setStations] = useState([]);
   const [genres, setGenres] = useState("house");
+
+  const [setRef] = useP5(sketch);
 
   const getStations = async (genres) => {
     const api = new RadioBrowserApi("MVP Radio App");
@@ -39,7 +42,7 @@ const radioGenres = [
 
   return (
     <div className="radio">
-          <Vizualizer />
+      <div ref={setRef} />
       <div className="filters">
         {radioGenres.map((genre, index) => (
           <span
